@@ -1,22 +1,20 @@
-# Multi-Layer Perceptron (MLP) Implementation
+# Multinomial Logistic Regression Implementation
 
-##  Project Overview
-This project features a custom implementation of a **Multi-Layer Perceptron (MLP)**, a fundamental deep learning architecture. It was developed to explore how neural networks capture non-linear patterns through hidden layers and the backpropagation algorithm.
+##  Overview
+This project features a Python implementation of a **Multinomial Logistic Regression** model (Softmax Regression). It was developed to solve multi-class classification problems, extending the principles of binary logistic regression to handle multiple target categories.
 
-##  Technical Features
-* **Neural Architecture:** Implementation of input, hidden, and output layers with adjustable neuron counts.
-* **Backpropagation Algorithm:** Manual implementation of the chain rule to calculate gradients and update weights/biases.
-* **Non-Linear Activations:** Used functions such as **ReLU** or **Sigmoid** to allow the network to learn complex data representations.
-* **Optimization:** Gradient Descent optimization to minimize the loss function (Cross-Entropy).
-* **Matrix Computations:** Highly efficient vectorized implementation using **NumPy**.
+##  Technical Implementation
+Key components implemented in this project:
+* **Softmax Activation:** Used in the output layer to provide a probability distribution across multiple classes.
+* **Cross-Entropy Loss:** Implementation of the multi-class loss function to measure the model's performance.
+* **One-Hot Encoding:** Logic for handling categorical target variables for multi-class labels.
+* **Gradient Descent:** Optimization of weights and biases to ensure convergence across all class parameters.
+* **Vectorization:** Efficient matrix math using **NumPy** for simultaneous weight updates.
 
 ##  Tech Stack
-* **Language:** Python 3.x
+* **Language:** Python
 * **Environment:** Jupyter Notebook
-* **Libraries:** NumPy, Matplotlib (for performance visualization).
+* **Libraries:** NumPy, Matplotlib.
 
 ##  Results
-The notebook includes:
-- **Training Logs:** Visualization of the loss decreasing over iterations.
-- **Accuracy Metrics:** Evaluation of the model's performance on the test set.
-- **Decision Boundaries:** (Optional) Visual representation of how the model separates different classes.
+The notebook demonstrates the training process on a multi-class dataset (such as the full MNIST set with 10 digits), including a visualization of the loss curve.
